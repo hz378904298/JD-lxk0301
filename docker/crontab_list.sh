@@ -34,8 +34,6 @@
 0 0-18/6 * * * node /scripts/jd_carnivalcity.js >> /scripts/logs/jd_carnivalcity.log 2>&1
 #金榜创造营
 40 9,21 * * * node /scripts/jd_gold_creator.js >> /scripts/logs/jd_gold_creator.log 2>&1
-#星推官
-0 0 * * * node /scripts/jd_xtg.js >> /scripts/logs/jd_xtg.log 2>&1
 #jd_babelDiy
 30 12 * * * node /scripts/jd_babelDiy.js >> /scripts/logs/jd_babelDiy.log 2>&1
 #明星小店
