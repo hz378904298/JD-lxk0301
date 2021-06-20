@@ -62,8 +62,6 @@
 05 23,6 3-18 6 * node /scripts/jd_618Opencard05.js >> /scripts/logs/jd_618Opencard05.log 2>&1
 #618母婴夺宝大作战
 15 9,21 9-20 6 * node /scripts/jd_618Opencard06.js >> /scripts/logs/jd_618Opencard06.log 2>&1
-#大牌联合'臻'宠粉丝
-15 8,20 9-23 6 * node /scripts/jd_618Opencard07.js >> /scripts/logs/jd_618Opencard07.log 2>&1
 # 618大牌联合 年中钜惠购
 01 8,20 9-23 6 * node /scripts/jd_618Opencard08.js >> /scripts/logs/jd_618Opencard08.log 2>&1
 # 大牌超级联合 618年中购
@@ -85,12 +83,6 @@
 0 0 * * * node /scripts/jd_club_lottery.js >> /scripts/logs/jd_club_lottery.log 2>&1
 # 东东农场
 5 6-18/6 * * * node /scripts/jd_fruit.js >> /scripts/logs/jd_fruit.log 2>&1
-# 宠汪汪
-15 */2 * * * node /scripts/jd_joy.js >> /scripts/logs/jd_joy.log 2>&1
-# 宠汪汪喂食
-15 */1 * * * node /scripts/jd_joy_feedPets.js >> /scripts/logs/jd_joy_feedPets.log 2>&1
-# 宠汪汪偷狗粮
-10 0-21/3 * * * node /scripts/jd_joy_steal.js >> /scripts/logs/jd_joy_steal.log 2>&1
 # 摇钱树
 0 */2 * * * node /scripts/jd_moneyTree.js >> /scripts/logs/jd_moneyTree.log 2>&1
 # 东东萌宠
@@ -167,8 +159,6 @@
 5 5 */2 * * node /scripts/jd_crazy_joy_coin.js >> /scripts/logs/jd_crazy_joy_coin.log 2>&1
 # 京东摇一摇
 0 1,17 * * * node /scripts/jd_shake.js >> /scripts/logs/jd_shake.log 2>&1
-# 店铺签到
-0 1,17 * * * node /scripts/jd_ShopSign.js >> /scripts/logs/jd_ShopSign.log 2>&1
 # 保价
 0 12 */3 * * node /scripts/jd_priceProtect.js >> /scripts/logs/jd_priceProtect.log 2>&1
 
