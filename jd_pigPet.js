@@ -1,4 +1,28 @@
+/*
+Last Modified time: 2021-5-19 12:27:16
+活动入口：京东金融养猪猪
+一键开完所有的宝箱功能。耗时70秒
+大转盘抽奖
+喂食
+每日签到
+完成分享任务得猪粮
+已支持IOS双京东账号,Node.js支持N个京东账号
+脚本兼容: QuantumultX, Surge, Loon, 小火箭，JSBox, Node.js
+===============Quantumultx===============
+[task_local]
+#京东金融养猪猪
+12 0-23/6 * * * jd_pigPet.js, tag=京东金融养猪猪, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdyz.png, enabled=true
 
+================Loon==============
+[Script]
+cron "12 0-23/6 * * *" script-path=jd_pigPet.js, tag=京东金融养猪猪
+
+===============Surge=================
+京东金融养猪猪 = type=cron,cronexp="12 0-23/6 * * *",wake-system=1,timeout=3600,script-path=jd_pigPet.js
+
+============小火箭=========
+京东金融养猪猪 = type=cron,script-path=jd_pigPet.js, cronexpr="12 0-23/6 * * *", timeout=3600, enable=true
+ */
 
 const $ = new Env('金融养猪');
 let cookiesArr = [], cookie = '', allMessage = '';
@@ -420,7 +444,6 @@ async function missions() {
       if (item.mid === 'CPD01') {
         await pigPetDoMission(item.mid);
       } else {
-        //TODO
         // await pigPetDoMission(item.mid);
         // await queryMissionReceiveAfterStatus(item.mid);
         // await finishReadMission(item.mid);

@@ -63,7 +63,7 @@ const JD_API_HOST = 'https://lkyl.dianpusoft.cn/api';
         console.log(`\n${$.UserName} 去给自己的下一账号 ${decodeURIComponent($.newShareCodes[(i + 1) % $.newShareCodes.length]['cookie'].match(/pt_pin=(.+?);/) && $.newShareCodes[(i + 1) % $.newShareCodes.length]['cookie'].match(/pt_pin=(.+?);/)[1])}助力，助力码为 ${code}\n`)
         await createAssistUser(code, $.createAssistUserID);
       }
-      console.log(`\n去帮助作者:LXK9301\n`)
+      console.log(`\n去帮助作者\n`)
       await helpFriends();
     }
   }
@@ -712,7 +712,7 @@ function login(userName) {
     const body = {
       "body": {
         "client": 2,
-        userName
+        "userName":userName.lkEPin
       }
     };
     const options = {
@@ -733,6 +733,7 @@ function login(userName) {
     $.post(options, async (err, resp, data) => {
       try {
         if (err) {
+          console.log(body)
           console.log(`${JSON.stringify(err)}`)
           console.log(`${$.name} API请求失败，请检查网路重试`)
         } else {
@@ -778,8 +779,8 @@ function updateInviteCodeCDN(url) {
     $.get({url, headers:{"User-Agent": $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0")}}, async (err, resp, data) => {
       try {
         if (err) {
-          console.log(`${JSON.stringify(err)}`)
-          console.log(`${$.name} API请求失败，请检查网路重试`)
+          //console.log(`${JSON.stringify(err)}`)
+          console.log(`助力码获取失败暂不帮助作者`)
         } else {
           $.inviteCodes = JSON.parse(data);
         }
