@@ -17,7 +17,7 @@ const JXUserAgent =  $.isNode() ? (process.env.JX_USER_AGENT ? process.env.JX_US
 $.inviteCodeList = [];
 let cookiesArr = [];
 $.appId = 10028;
-$.helpCkList = [];
+$.helpCkList = ['hCiZEB6AI2gW9tbV0SXqCdsKnHDH3T_rtLTRxpis8pqwbmfPzTkMZL979IzkiUtD'];
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
     cookiesArr.push(jdCookieNode[item])
