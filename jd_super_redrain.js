@@ -1,6 +1,8 @@
-
+/*
+#整点京豆雨
+1 0-23/1 * * * jd_super_redrain.js
+ */
 const $ = new Env('整点京豆雨');
-
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';

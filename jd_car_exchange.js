@@ -1,4 +1,6 @@
-
+/*
+cron "0 0 * * *" jd_car_exchange.js, tag:京东汽车兑换
+*/
 const $ = new Env('京东汽车兑换');
 
 const notify = $.isNode() ? require('./sendNotify') : '';

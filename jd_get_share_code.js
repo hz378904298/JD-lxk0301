@@ -1,4 +1,6 @@
-
+/*
+cron "47 7 * * *" jd_get_share_code.js, tag:获取互助码
+*/
 const $ = new Env("获取互助码");
 const JD_API_HOST = "https://api.m.jd.com/client.action";
 let cookiesArr = [], cookie = '', message;

@@ -1,5 +1,6 @@
-
-
+/*
+cron "0 0 * * *" jd_club_lottery.js, tag:摇京豆
+*/
 const $ = new Env('摇京豆');
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;

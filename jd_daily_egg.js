@@ -1,4 +1,6 @@
-
+/*
+cron "18 * * * *" jd_daily_egg.js, tag:天天提鹅
+*/
 const $ = new Env('天天提鹅');
 let cookiesArr = [], cookie = '';
 const JD_API_HOST = 'https://ms.jr.jd.com/gw/generic/uc/h5/m';

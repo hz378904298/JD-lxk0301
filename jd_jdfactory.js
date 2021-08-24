@@ -1,4 +1,6 @@
-
+/*
+cron "10 * * * *" jd_jdfactory.js, tag:东东工厂
+*/
 const $ = new Env('东东工厂');
 
 const notify = $.isNode() ? require('./sendNotify') : '';

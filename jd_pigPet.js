@@ -12,17 +12,15 @@ Last Modified time: 2021-5-19 12:27:16
 [task_local]
 #京东金融养猪猪
 12 0-23/6 * * * jd_pigPet.js, tag=京东金融养猪猪, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdyz.png, enabled=true
-
 ================Loon==============
 [Script]
 cron "12 0-23/6 * * *" script-path=jd_pigPet.js, tag=京东金融养猪猪
-
 ===============Surge=================
 京东金融养猪猪 = type=cron,cronexp="12 0-23/6 * * *",wake-system=1,timeout=3600,script-path=jd_pigPet.js
-
 ============小火箭=========
 京东金融养猪猪 = type=cron,script-path=jd_pigPet.js, cronexpr="12 0-23/6 * * *", timeout=3600, enable=true
  */
+
 
 const $ = new Env('金融养猪');
 const url = require('url');

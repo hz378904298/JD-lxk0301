@@ -1,4 +1,6 @@
-
+/*
+cron "0 0 * * *" jd_car.js, tag:京东汽车
+*/
 const $ = new Env('京东汽车');
 
 const notify = $.isNode() ? require('./sendNotify') : '';

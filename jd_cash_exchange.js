@@ -1,4 +1,6 @@
-
+/*
+cron "0,1,2 0 * * *" jd_cash_exchange.js, tag:领现金兑换红包
+*/
 const $ = new Env('领现金兑换红包');
 const printDetail = false;
 //Node.js用户请在jdCookie.js处填写京东ck;

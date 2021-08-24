@@ -1,4 +1,7 @@
-
+/*
+半点京豆雨
+30 16-23/1 * * * jd_half_redrain.js
+ */
  const $ = new Env('半点京豆雨');
 
  const notify = $.isNode() ? require('./sendNotify') : '';

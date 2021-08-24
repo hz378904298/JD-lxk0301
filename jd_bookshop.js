@@ -1,4 +1,6 @@
-
+/*
+cron "7 8,12,18 * * *" jd_bookshop.js, tag:口袋书店
+*/
 const $ = new Env('口袋书店');
 const notify = $.isNode() ? require('./sendNotify') : '';
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';

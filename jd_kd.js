@@ -1,4 +1,6 @@
-
+/*
+cron "23 1 * * *" jd_kd.js, tag:京东快递签到
+*/
 const $ = new Env('京东快递签到');
 
 const notify = $.isNode() ? require('./sendNotify') : '';
