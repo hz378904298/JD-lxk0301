@@ -414,7 +414,7 @@ if (process.env.QMSG_QQ) {
    return  new Promise(resolve => {
      if (BARK_PUSH) {
        const options = {
-         url: `${BARK_PUSH}/${encodeURIComponent(text)}/${encodeURIComponent(desp)}?sound=${BARK_SOUND}&${querystring.stringify(params)}`,
+        url: `${BARK_PUSH}/${encodeURIComponent(text)}/${encodeURIComponent(desp)}?sound=${BARK_SOUND}&group=${BARK_GROUP}&${querystring.stringify(params)}`,
          headers: {
            'Content-Type': 'application/x-www-form-urlencoded'
          },
